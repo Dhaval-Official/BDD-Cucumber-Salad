@@ -94,7 +94,7 @@ public class RegularExpressionTime {
         System.out.println("62 "+Pattern.matches("b.*at","bbat"));
         System.out.println("63 "+Pattern.matches("b.+at","bbat"));
 
-        System.out.println();
+
 
 
 
