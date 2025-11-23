@@ -1,0 +1,19 @@
+package tests;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/java/tests",  // Path to your .feature files
+        glue = "tests",                    // Step definition package
+        plugin = {
+                "pretty",
+                "html:target/CucumberReport.html"
+        }
+
+)
+public class MyRunner {
+
+}
