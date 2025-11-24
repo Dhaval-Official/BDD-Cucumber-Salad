@@ -14,7 +14,9 @@ public class Login4 {
     public void user_navigates_to_login_page() {
         System.out.println(">> User got navigated to login page");
     }
-/* these are old methods that does not support TDD
+
+
+/*  these are old methods that does not support TDD
     @When("User enters valid email address {string}")
     public void user_enters_valid_email_address(String string) {
         System.out.println(">> User Enters valid email address "+string);
