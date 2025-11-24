@@ -12,6 +12,7 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/CucumberReport.html"
         },
+        //will only run features with @casesIlike tag
         tags="@casesIlike"
 
 )
