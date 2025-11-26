@@ -1,9 +1,23 @@
 package tests;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.PendingException;
 import io.cucumber.java.en.*;
 
 public class Search {
+
+    //this is called hook here
+    @Before
+    public void setup() {
+        System.out.println("Browser got opened --- this is called from search.java file");
+    }
+
+    //this also is called hook here
+    @After
+    public void tearDown() {
+        System.out.println("Browser got Closed --- this is called from search.java file");
+    }
 
     @Given("User open app")
     public void User_open_app() {
