@@ -15,7 +15,7 @@ Feature: User Registration
     And Clicks on continue3
     Then Account should be created successfully3
 
-  @RegisterMe
+  @RegisterMe @RegisterMe2
   Scenario: Register with all fields
     When User enters Fname3 "Dhaval" as Fname
     And Enters Lname "Lakhani" as Lname
