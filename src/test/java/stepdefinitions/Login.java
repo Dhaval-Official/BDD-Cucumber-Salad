@@ -1,22 +1,16 @@
-package tests;
+package stepdefinitions;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 
 
-public class Login4 {
+public class Login {
 
-    //here only regular expressions are used
 
-    @Given("^User navigates to login page4$")
+    @Given("User navigates to login page")
     public void user_navigates_to_login_page() {
         System.out.println(">> User got navigated to login page");
     }
-
-
-/*  these are old methods that does not support TDD
+/* these are old methods that does not support TDD
     @When("User enters valid email address {string}")
     public void user_enters_valid_email_address(String string) {
         System.out.println(">> User Enters valid email address "+string);
@@ -27,29 +21,31 @@ public class Login4 {
         System.out.println(">> User Enters passwords "+ string);
     }
 */
-    @When("^Clicks on Login button4")
+    @When("Clicks on Login button")
     public void clicks_on_login_button() {
         System.out.println(">> User click on Login");
     }
 
-    @Then("^User should login successfully4")
+    @Then("User should login successfully")
     public void user_should_login_successfully() {
         System.out.println(">> User gets logged in successfully");
     }
 
-    @Then("^User should get a proper warning message4")
+    @Then("User should get a proper warning message")
     public void user_should_get_a_proper_warning_message() {
         System.out.println(">> User gets a warning message");
     }
 
 
-    @When("^User enters valid email address4 (.+)$")
+    @When("^User enters valid email address (.+)$")
     public void userEntersValidEmailAddressEmail(String email) {
+        // Write code here that turns the phrase above into concrete actions
         System.out.println(">> User has Entered valid email address "+email);
     }
 
-    @And("^Enters valid password4 (.+)$")
+    @And("^Enters valid password (.+)$")
     public void entersValidPasswordPwd(String pwd) {
+        // Write code here that turns the phrase above into concrete actions
         System.out.println(">> User has Entered valid email address "+pwd);
     }
 }

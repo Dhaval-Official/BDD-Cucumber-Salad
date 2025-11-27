@@ -1,5 +1,5 @@
 Feature: User Registration
-#Regular Expressions use in Register3.java file
+#Tags used in Register4
   Background:
     Given User navigates to register page3
 

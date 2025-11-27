@@ -1,0 +1,19 @@
+package runner;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+//THIS is a MAVEN specific runner
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "stepdefinitions",
+        tags="@smoke",
+        plugin = {
+                "pretty",
+                "html:target/CucumberReport.html"
+        }
+)
+public class TestRunnerWithTags {
+}

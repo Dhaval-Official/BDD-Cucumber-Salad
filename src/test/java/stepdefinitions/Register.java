@@ -1,6 +1,5 @@
-package tests;
+package stepdefinitions;
 
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.*;
 
 public class Register{
