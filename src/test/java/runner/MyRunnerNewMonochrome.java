@@ -9,14 +9,14 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",  // Path to your .feature files
         glue = "stepdefinitions",                    // Step definition package
         publish = true,
+        monochrome = true,
         plugin = {
-                "pretty",
                 "html:target/CucumberReport.html"
         },
         tags="@all and not @dev and not @wip"
 
 )
 
-public class MyRunnerNewCucumberCloudReport {
+public class MyRunnerNewMonochrome {
 
 }
